@@ -1,0 +1,10 @@
+.overlay::after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $overlay-dark;
+  pointer-events: none;
+}

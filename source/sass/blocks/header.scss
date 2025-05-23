@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  background-color: $base-bg;
+  justify-content: space-between;
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}

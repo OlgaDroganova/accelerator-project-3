@@ -2,3 +2,25 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// Common
+// ---------------------------------
+
+@import "common/variables";
+@import "common/mixins";
+@import "common/fonts";
+@import "common/global";
+@import "common/visually-hidden";
+@import "common/container";
+@import "common/overlay";
+
+//Blocks
+// ---------------------------------
+
+@import "blocks/list";
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/header-logo";
+@import "blocks/header-menu";
+@import "blocks/header-button";
+@import "blocks/hero";

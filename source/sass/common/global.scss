@@ -1,0 +1,66 @@
+body {
+  font-family: $primary-font;
+  color: $primary-color;
+  font-style: normal;
+  font-display: swap;
+  background-color: $light-bg;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $base-bg;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $base-bg;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $base-bg;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $base-bg;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}

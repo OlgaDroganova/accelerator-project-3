@@ -1,3 +1,313 @@
 .hero {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $base-bg;
+  margin: 0;
 }
+
+.hero__slider {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 100%;
+    height: 1024px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
+}
+
+.hero__slider .hero__item {
+  display: flex;
+  height: 568px;
+  width: 320px;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 100%;
+    height: 1024px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  height: 568px;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    height: 1024px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
+}
+
+.hero__wrapper {
+  width: 290px;
+  padding: 20px 15px;
+  margin: 0 auto;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin: 0 auto;
+    width: 678px;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+  }
+}
+
+.hero h2 {
+  position: relative;
+  font-size: 22px;
+  line-height: 26px;
+  border-radius: 0 14px 14px 0;
+  padding: 20px 14px 16px;
+  background-color: $secondary-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("../../img/sprite/ugol.svg");
+    background-repeat: no-repeat;
+    bottom: -10px;
+    right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: 2/1/3/4;
+    width: 550px;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 30px 69px 23px 40px;
+    border-radius: 0 26px 26px 0;
+
+    &::after {
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+      bottom: -26px;
+      right: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 62px;
+    width: 859px;
+    padding: 40px 59px 30px 50px;
+
+    &::after {
+      right: 167px;
+    }
+  }
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  user-select: none;
+  overflow: hidden;
+  width: 235px;
+  height: 102px;
+
+  @media (min-width: $tablet-width) {
+    width: 241px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 391px;
+    line-height: 26px;
+  }
+}
+
+.hero__description-wrapper {
+  position: relative;
+  width: 239px;
+  padding: 0 14px 13px;
+  border-radius: 0 0 14px;
+  background-color: $secondary-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("../../img/sprite/ugol.svg");
+    bottom: -10px;
+    right: 73px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3/1/4/3;
+    width: 479px;
+    padding: 0 74px 33px 40px;
+    border-radius: 0 0 26px 26px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 661px;
+    border-radius: 0 0 30px 30px;
+    padding: 0 65px 11px 49px;
+  }
+}
+
+.hero__link-wrapper {
+  position: relative;
+  display: flex;
+  width: 154px;
+  padding: 10px 15px;
+  border-radius: 0 0 14px 14px;
+  background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3/2/4/4;
+    border-radius: 0 0 0 30px;
+    width: 298px;
+    height: 135px;
+    align-items: flex-start;
+    padding: 0;
+    padding-left: 255px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 55px;
+    width: 198px;
+    padding-left: 365px;
+    padding-top: 11px;
+  }
+}
+
+.hero__link {
+  width: 72px;
+  height: 12px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-color: $base-bg;
+    border-radius: 50%;
+    right: 4px;
+    top: 4px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    top: 16px;
+    right: 16px;
+    background-color: $secondary-color;
+    mask-image: url("../../img/sprite/arrow.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      top: 23px;
+      right: 23px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    &::before {
+      background-color: $secondary-color;
+    }
+
+    &::after {
+      background-color: $base-bg;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    border: 1px solid $disabled-color;
+
+    &::before {
+      background-color: $disabled-color;
+    }
+  }
+
+  &:focus {
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.hero__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  width: fit-content;
+  max-width: 250px;
+  min-width: 80px;
+  min-height: 28px;
+  border-radius: 12px 12px 0 0;
+  background-color: $secondary-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("../../img/sprite/ugol.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: -10px;
+    transform: rotate(-90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/2;
+    min-width: 100px;
+    min-height: 40px;
+    border-radius: 20px 20px 0 0;
+
+    &::after {
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+      right: -26px;
+    }
+  }
+}
+

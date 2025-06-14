@@ -13,14 +13,22 @@
 @import "common/visually-hidden";
 @import "common/container";
 @import "common/overlay";
+@import "common/button";
 
-//Blocks
+// Blocks
 // ---------------------------------
 
 @import "blocks/list";
 @import "blocks/page";
+@import "blocks/main-container";
 @import "blocks/header";
 @import "blocks/header-logo";
+@import "blocks/header-nav";
 @import "blocks/header-menu";
 @import "blocks/header-button";
 @import "blocks/hero";
+@import "blocks/about";
+@import "blocks/programs";
+@import "blocks/footer";
+@import "blocks/footer-logo";
+

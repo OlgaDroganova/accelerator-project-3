@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid $base-bg;
+  border-radius: 30px;
+  padding: 15px 59px 15px 21px;
+  background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    padding: 21px 94px 21px 30px;
+  }
+
+  &:hover {
+    background-color: $base-bg;
+    color: $secondary-color;
+  }
+}

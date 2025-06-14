@@ -16,122 +16,274 @@
 </head>
 
 <body class="page-body">
-  <main>
-    <div class="hero__header header">
-      <div class="header__wrapper container">
-        <div class="header-logo">
-          <img class="header-logo__logo" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="логотип">
-        </div>
-        <nav class="header-nav header-nav--closed" aria-label="Основная навигация">
-          <button class="header-menu__button" type="button">меню</button>
-          <ul class="header-nav__list list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#about">О проекте</a>
-            </li>
-            <li class="header-nav__item header-nav__item--opened">
-              <a class="header-nav__link" href="#">Программы</a>
-              <ul class="header-nav__sublist list">
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#programs">Стажировки</a>
-                </li>
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#programs">Волонтёрство</a>
-                </li>
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#programs">Учёба</a>
-                </li>
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#programs">Религия</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#grant">как поехать</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#reviews">отзывы</a>
-            </li>
-            <li class="header-nav__item header-nav__item--opened">
-              <a href="#news">новости</a>
-              <ul class="header-nav__sublist list">
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#news">Стажировка</a>
-                </li>
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#news">Путешествия</a>
-                </li>
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#news">Волонтерство</a>
-                </li>
-                <li class="header-nav__subitem">
-                  <a class="header-nav__sublink" href="#news">Карьера</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#contacts">контакты</a>
-            </li>
-          </ul>
-        </nav>
+  <header class="header">
+    <div class="header__wrapper container">
+      <div class="header-logo">
+        <img class="header-logo__logo" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="логотип">
       </div>
+      <nav class="header-nav header-nav--closed" aria-label="Основная навигация">
+        <button class="header-menu__button" type="button">
+          <span class="header-menu__text">меню</span>
+        </button>
+        <ul class="header-nav__list list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#about">О проекте</a>
+          </li>
+          <li class="header-nav__item header-nav__item--opened">
+            <a class="header-nav__link" href="#">Программы</a>
+            <ul class="header-nav__sublist list">
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#programs">Стажировки</a>
+              </li>
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#programs">Волонтёрство</a>
+              </li>
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#programs">Учёба</a>
+              </li>
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#programs">Религия</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#grant">как поехать</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#reviews">отзывы</a>
+          </li>
+          <li class="header-nav__item header-nav__item--opened">
+            <a href="#news">новости</a>
+            <ul class="header-nav__sublist list">
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#news">Стажировка</a>
+              </li>
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#news">Путешествия</a>
+              </li>
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#news">Волонтерство</a>
+              </li>
+              <li class="header-nav__subitem">
+                <a class="header-nav__sublink" href="#news">Карьера</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#contacts">контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  <main class="main-container">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Стажировка</h1>
-      <h2>Глобальный профессиональный опыт обучения за рубежом</h2>
-      <p>Погрузитесь в академическую
-        программу, проходя практику
-        в разных городах, ощущая
-        настоящий студенческий стиль жизни!</p>
-      <button type="button">подробнее</button>
+      <div class="hero__slider hero-slider" id="hero-slider">
+        <div class="swiper">
+          <ul class="hero__list swiper-wrapper">
+            <li class="hero__item swiper-slide">
+              <div class="hero__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1300px)" type="image/webp" src="./img/hero-desktop-3@1x.webp" srcset="./img/hero-desktop-3@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" src="./img/hero-tablet-3@1x.webp" srcset="./img/hero-tablet-3@2x.webp 2x" type="image/webp" width="768" height="1024">
+                  <source type="image/webp" src="./img/hero-mobile-3@1x.webp" srcset="./img/hero-mobile-3@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width: 1300px)" type="image/jpg" src="./img/hero-desktop-3@1x.jpg" srcset="./img/hero-desktop-3@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpg" src="./img/hero-tablet-3@1x.jpg" srcset="./img/hero-tablet-3@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__image" src="./img/hero-mobile-3@1x.jpg" srcset="./img/hero-mobile-3@2x.jpg" width="320" height="568" alt="Фото девушки">
+                </picture>
+              </div>
+              <div class="hero__wrapper">
+                <div class="hero__pagination">
+                </div>
+                <h2>Глобальный профессиональный опыт обучения за рубежом</h2>
+                <div class="hero__description-wrapper">
+                  <p>Погрузитесь в академическую
+                    программу, проходя практику
+                    в разных городах, ощущая
+                    настоящий студенческий стиль жизни!</p>
+                </div>
+                <div class="hero__link-wrapper">
+                  <a class="hero__link button" href="#">
+                    <span>подробнее</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <!-- разобраться со слайдером
+            <li class="hero__item swiper-slide">
+              <div class="hero__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1300px)" type="image/webp" src="./img/hero-desktop-2@1x.webp" srcset="./img/hero-desktop-2@2x.webp 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" src="./img/hero-tablet-2@1x.webp" srcset="./img/hero-tablet-2@2x.webp 2x" type="image/webp" width="768" height="1024">
+                  <source type="image/webp" src="./img/hero-mobile-2@1x.webp" srcset="./img/hero-mobile-2@2x.webp 2x" width="320" height="568">
+                  <source media="(min-width: 1300px)" type="image/jpg" src="./img/hero-desktop-2@1x.jpg" srcset="./img/hero-desktop-2@2x.jpg 2x" width="1440" height="800">
+                  <source media="(min-width: 768px)" type="image/jpg" src="./img/hero-tablet-2@1x.jpg" srcset="./img/hero-tablet-2@2x.jpg 2x" width="768" height="1024">
+                  <img class="hero__image" src="./img/hero-mobile-2@1x.jpg" srcset="./img/hero-mobile-2@2x.jpg" width="320" height="568" alt="Фото девушки">
+                </picture>
+              </div>
+              <div class="hero__wrapper">
+                <div class="hero__pagination nebo nebo--tr">
+                </div>
+              </div>
+              <h2>Волонтёрские программы — внесите свой вклад в общество</h2>
+              <div class="hero__description-wrapper nebo nebo--br">
+                <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+              </div>
+              <div class="hero__link-wrapper nebo nebo--br">
+                <a class="hero__link button" href="#">
+                  <span>подробнее</span>
+                </a>
+              </div>
+            </li>
+
+            <div class="hero__pagination swiper-pagination"></div>
+
+            -->
+          </ul>
+        </div>
+
+      </div>
+      </div>
+
     </section>
 
-    <section data-test="about">
-      <h2>О проекте «Стажировка»</h2>
-      <p>«Стажировка» — совместный проект
-        правительств и волонтёрских бригад.</p>
-      <h3>Наша цель</h3>
-      <p>Наша деятельность направлена
-        на повышение квалификации молодых
-        специалистов на ранних и средних
-        стадиях карьеры, предоставляя
-        им инструменты для решения сложных
-        проблем, с которыми сталкиваются в мире.
-        Цель центра — наделить этих людей
-        способностью инициировать значимые
-        изменения.</p>
-      <button type="button">подробнее о проекте</button>
+    <section class="about container" data-test="about" id="about">
+      <div class="about__wrapper">
+        <div class="about__wrapper-main">
+          <h2 class="about__title">О проекте «Стажировка»</h2>
+          <p>«Стажировка» — совместный проект
+            правительств и волонтёрских бригад.</p>
+        </div>
+        <div class="about__wrapper-target">
+          <h3>Наша цель</h3>
+          <p>Наша деятельность направлена
+            на повышение квалификации молодых
+            специалистов на ранних и средних
+            стадиях карьеры, предоставляя
+            им инструменты для решения сложных
+            проблем, с которыми сталкиваются в мире.
+            Цель центра — наделить этих людей
+            способностью инициировать значимые
+            изменения.</p>
+          <button class="about__button button" type="button">подробнее о проекте</button>
+        </div>
+      </div>
+
+      <ul class="about__list">
+        <li class="about__item">
+          <h4>Более 250 программ</h4>
+          <p>учебных и рабочих, разной
+            длительностью от 3 месяцев
+            до 1 года</p>
+        </li>
+        <li class="about__item">
+          <h4>Более 3000 участников</h4>
+          <p>уже успешно прошли программу от «Стажировка» и остались в разных странах</p>
+        </li>
+        <li class="about__item">
+          <h4>участники из 60 стран</h4>
+          <p>студенты со всего мира приезжают на программу
+            «Стажировки» от 3 месяцев до 1 года</p>
+        </li>
+        <li class="about__item">
+          <h4>от 4 200 $<br>
+            до 8 400 $</h4>
+          <p>грант всем участникам
+            для комфортного прохождения
+            программы</p>
+        </li>
+      </ul>
     </section>
-    <section data-test="programs">
-      <div>
-        <h4>Более 250 программ</h4>
-        <p>учебных и рабочих, разной
-          длительностью от 3 месяцев
-          до 1 года</p>
+
+    <section class="programs" data-test="programs" id="programs">
+      <div class="programs__container container">
+        <h2>Программы</h2>
+        <a class="programs__link button" href="#">
+          <span>все программы</span>
+        </a>
+        <div class="programs__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper programs__slider-wrapper">
+              <div class="swiper-slide">
+                <div class="programs__slide">
+                  <div class="programs__slider-container">
+                    <h3>Стажировки</h3>
+                    <div class="programs__slider-link">
+                      <a href="#">Получите незаменимый опыт
+                        работы в крупнейших мировых
+                        компаниях.</a>
+                    </div>
+                  </div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/programs-1-desktop@1x.webp, img/programs-1-desktop@2x.webp 2x" width="660" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-1-tablet@1x.webp, img/programs-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/jpeg" media="(min-width: 1300px)" srcset="img/programs-1-desktop@1x.jpg, img/programs-1-desktop@2x.jpg 2x" width="392" height="420">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/programs-1-tablet@1x.jpg, img/programs-1-tablet@2x.jpg 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/programs-1-mobile@1x.webp, img/programs-1-mobile@2x.webp 2x" width="290" height="400">
+                    <img class="programs__image" src="img/programs-1-mobile@1x.jpg" srcset="img/programs-1-mobile@2x.jpg 2x" width="290" height="400" alt="стажировки">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="programs__slide">
+                  <div class="programs__slider-container">
+                    <h3>Волонтёрство</h3>
+                    <div class="programs__slider-link">
+                      <a href="#">Помогайте другим
+                        и развивайте свои
+                        лидерские качества</a>
+                    </div>
+                  </div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/programs-2-desktop@1x.webp, img/programs-2-desktop@2x.webp 2x" width="660" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-2-tablet@1x.webp, img/programs-2-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/jpeg" media="(min-width: 1300px)" srcset="img/programs-2-desktop@1x.jpg, img/programs-2-desktop@2x.jpg 2x" width="392" height="420">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/programs-2-tablet@1x.jpg, img/programs-2-tablet@2x.jpg 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/programs-2-mobile@1x.webp, img/programs-2-mobile@2x.webp 2x" width="290" height="400">
+                    <img class="programs__image" src="img/programs-2-mobile@1x.jpg" srcset="img/programs-2-mobile@2x.jpg 2x" width="290" height="400" alt="стажировки">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="programs__slide">
+                  <div class="programs__slider-container">
+                    <h3>Учёба</h3>
+                    <div class="programs__slider-link">
+                      <a href="#">Получите образование и измените
+                        своё будущее.</a>
+                    </div>
+                  </div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/programs-3-desktop@1x.webp, img/programs-3-desktop@2x.webp 2x" width="660" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-3-tablet@1x.webp, img/programs-3-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/jpeg" media="(min-width: 1300px)" srcset="img/programs-3-desktop@1x.jpg, img/programs-3-desktop@2x.jpg 2x" width="392" height="420">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/programs-3-tablet@1x.jpg, img/programs-3-tablet@2x.jpg 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/programs-3-mobile@1x.webp, img/programs-3-mobile@2x.webp 2x" width="290" height="400">
+                    <img class="programs__image" src="img/programs-3-mobile@1x.jpg" srcset="img/programs-3-mobile@2x.jpg 2x" width="290" height="400" alt="стажировки">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="programs__swiper-buttons">
+          <button class="programs__swiper-button programs__swiper-button--prev" type="button">
+            <span class="visually-hidden">назад</span>
+          </button>
+          <button class="programs__swiper-button programs__swiper-button--next" type="button">
+            <span class="visually-hidden">вперед</span>
+          </button>
+        </div>
+        <div class="programs__swiper-scrollbar swiper-scrollbar">
+          <div class="programs__swiper-scroll">
+            <button class="programs__swiper-scroll-button" type="button">
+              <span class="visually-hidden">скролл</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Более 3000 участников</h4>
-        <p>уже успешно прошли программу от «Стажировка» и остались в разных странах</p>
-      </div>
-      <div>
-        <h4>участники из 60 стран</h4>
-        <p>студенты со всего мира приезжают на программу
-          «Стажировки» от 3 месяцев до 1 года</p>
-      </div>
-      <div>
-        <h4>от 4 200 $
-          до 8 400 $</h4>
-        <p>грант всем участникам
-          для комфортного прохождения
-          программы</p>
-      </div>
-    </section>
-    <section>
-      <h2>Программы</h2>
-      <h3>Стажировки</h3>
-      <p>Получите незаменимый опыт
-        работы в крупнейших мировых
-        компаниях.</p>
-      <button type="button">все программы</button>
+
     </section>
     <section data-test="grant">
       <h2>Как поехать</h2>
@@ -278,7 +430,52 @@
       <form action="1"></form>
     </section>
   </main>
-  <footer data-test="footer"></footer>
+  <footer class="footer" data-test="footer">
+    <div class="footer__wrapper">
+      <div class="footer-logo">
+        <span class="visually-hidden">логотип</span>
+      </div>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#about">О проекте</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#programs">Программы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#grant">Как поехать</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#about">Отзывы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#news">Новости</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+      <span class="footer__copyright">Стажировка © 2023 Все права защищены</span>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--vk" href="#">
+            <span class="visually-hidden">вконтакте</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--ok" href="#">
+            <span class="visually-hidden">одноклассники</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--reddit" href="#">
+            <span class="visually-hidden">reddit</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- пример использования спрайта -->
 

@@ -1,0 +1,41 @@
+.pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 80px;
+  bottom: 10px;
+  margin: 0;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagination__bullet {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border: 2px solid $base-bg;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.pagination .pagination__bullet--current {
+  background-color: $base-bg;
+}

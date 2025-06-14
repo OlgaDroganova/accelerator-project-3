@@ -1,7 +1,22 @@
 .header {
+  position: absolute;
   display: flex;
-  background-color: $base-bg;
   justify-content: space-between;
+  padding: 21px 15px;
+  width: 290px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding: 30px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+  }
 }
 
 .header__wrapper {
@@ -11,4 +26,14 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 678px;
+    height: 56px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1240px;
+  }
 }

@@ -20,11 +20,10 @@
   @media (min-width: $tablet-width) {
     grid-area: 1/1/2/2;
     justify-self: flex-start;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 27px;
   }
 }

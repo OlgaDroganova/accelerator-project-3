@@ -5,3 +5,6 @@
 
 // import './hero-slider';
 // import './programs';
+import './faq';
+import './reviews';
+

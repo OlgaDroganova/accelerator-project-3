@@ -1,0 +1,154 @@
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid $base-bg;
+  border-radius: 16px;
+  padding: 30px 15px;
+  width: 256px;
+  height: 408px;
+
+  @media (min-width: $tablet-width) {
+    width: 456px;
+    height: 313px;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    height: 379px;
+  }
+}
+
+.reviews-card__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+    width: 560px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 100px;
+    width: 570px;
+  }
+}
+
+.reviews-card__name-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+    padding: 0;
+  }
+}
+
+.reviews-card__image-wrap {
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    height: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 90px;
+  }
+}
+
+.reviews-card__title {
+  font-size: 14px;
+  line-height: 18px;
+  width: 70px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews-card__data-wrap {
+  display: flex;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+  }
+}
+
+.reviews-card__data {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 9px;
+    width: 140px;
+  }
+}
+
+.reviews-card__data-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.1px;
+  color: $base-bg;
+}
+
+.reviews-card__info {
+  font-size: 12px;
+  line-height: 14px;
+  color: $base-bg;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.reviews-card__info-light {
+  font-size: 16px;
+  line-height: 18px;
+  color: $base-bg;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
+    width: 525px;
+    padding-bottom: 25px;
+  }
+}
+
+.reviews-card__content p {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
+}

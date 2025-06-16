@@ -1,4 +1,4 @@
-.header-menu__button {
+.header-nav__button {
   border-radius: 30px;
   border: 1px solid $base-bg;
   color: $base-bg;
@@ -42,12 +42,12 @@
   }
 }
 
-.header-menu__text {
+.header-nav__text {
   display: flex;
   padding-left: 15px;
 }
 
-.header-menu__item {
+.header-nav__item {
   font-size: 16px;
   line-height: 16px;
 }

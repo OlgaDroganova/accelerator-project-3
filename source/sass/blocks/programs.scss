@@ -1,12 +1,18 @@
 .programs {
   display: flex;
   width: 100%;
-  padding: 56px 0 49px;
+  padding: 56px 0 50px;
   overflow: visible;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 29px;
   }
 }
 
@@ -26,6 +32,10 @@
     line-height: 50px;
     padding-top: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .programs__slide {
@@ -39,6 +49,10 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 392px;
   }
 }
 
@@ -78,12 +92,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-area: 1/2/2/3;
+    grid-area: 1/1/2/3;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
     margin-top: 0;
-    margin-left: 256px;
+    margin-left: 444px;
     width: 108px;
     padding: 20px 94px 20px 30px;
 
@@ -99,6 +113,11 @@
       right: 22px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 1006px;
+    padding-bottom: 19px;
+  }
 }
 
 .programs__slider {
@@ -111,6 +130,10 @@
   @media (min-width: $tablet-width) {
     height: 100%;
     padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
   }
 }
 
@@ -134,6 +157,12 @@
   @media (min-width: $tablet-width) {
     width: 284px;
     padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 17px;
+    padding-right: 51px;
+    width: 321px;
   }
 }
 
@@ -164,6 +193,13 @@
     font-size: 20px;
     line-height: 14px;
     padding-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 17px;
+    padding-right: 0;
+    width: 176px;
   }
 }
 
@@ -212,6 +248,15 @@
       top: 37px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    padding-right: 68px;
+
+    &::before {
+      top: 25px;
+    }
+  }
 }
 
 .programs__slider-link a {
@@ -225,12 +270,22 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+    height: 54px;
+    align-content: center;
+  }
 }
 
 .programs__slider-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 32px;
   }
 }
 
@@ -244,6 +299,12 @@
 
 .programs__slider-wrapper .swiper-slide:nth-child(2) {
   @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.programs__slider-wrapper .swiper-slide:nth-child(3) {
+  @media (min-width: $desktop-width) {
     display: inline;
   }
 }
@@ -262,12 +323,16 @@
     padding-top: 40px;
     margin-left: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 51px;
+  }
 }
 
 .programs__swiper-button {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 22px;
   height: 22px;
 
@@ -283,18 +348,22 @@
 }
 
 .programs__swiper-button--prev {
+  left: 0;
+  padding: 0;
+
   &::after {
-    mask-image: url("../../img/sprite/arrow.svg");
+    mask-image: url("../../img/sprite/arror-l.svg");
     background-color: $disabled-color;
-    transform: rotate(-135deg);
   }
 }
 
 .programs__swiper-button--next {
+  right: 0;
+  padding: 0;
+
   &::after {
-    mask-image: url("../../img/sprite/arrow.svg");
+    mask-image: url("../../img/sprite/arror-r.svg");
     background-color: $base-bg;
-    transform: rotate(45deg);
   }
 }
 
@@ -306,6 +375,10 @@
     grid-area: 3/1/4/2;
     padding-top: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+  }
 }
 
 .programs__swiper-scroll {
@@ -313,6 +386,10 @@
   width: 562px;
   height: 2px;
   background-color: #93afd6;
+
+  @media (min-width: $desktop-width) {
+    width: 1136px;
+  }
 }
 
 .programs__swiper-scroll-button {
@@ -320,4 +397,8 @@
   background-color: $base-bg;
   cursor: pointer;
   width: 326px;
+
+  @media (min-width: $desktop-width) {
+    width: 394px;
+  }
 }
